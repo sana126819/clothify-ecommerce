@@ -1,0 +1,129 @@
+/* === Global Colors === */
+:root {
+    --bg: #F7F6F2;
+    --text: #2C3E50;
+
+    --primary: #8FAACB;              /* Header / Primary Buttons */
+    --primary-hover: #B0C9D6;        /* Header/Button hover */
+    --accent: #F5D6D6;               /* Dropdown hover + highlights */
+    --product-hover: #E9C89F;        /* Product card hover */
+    --footer-bg: #6E8AAB;            /* Footer background */
+    --footer-hover: #F5D6D6;
+}
+
+/* === Page Background === */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* === Header === */
+header {
+    background: var(--primary);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: var(--primary-hover);
+}
+
+/* === Main Content === */
+.main-content {
+    width: 80%;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+}
+
+/* === Table === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* === Dropdown === */
+/* === Dropdown === */
+select {
+    padding: 12px;
+    font-size: 14px;
+    width: 60%;
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+    background-color: #fff; /* keep normal white */
+    transition: background-color 0.3s;
+}
+
+select:hover {
+    background-color: #DDE7F2; /* soft light blue, looks nice with buttons */
+}
+
+/* === Buttons === */
+.buy-btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.buy-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+/* === Inputs (radio) === */
+input[type="radio"] {
+    accent-color: var(--primary);
+}
+
+/* === Footer (if needed) === */
+footer {
+    background: var(--footer-bg);
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--footer-hover);
+}

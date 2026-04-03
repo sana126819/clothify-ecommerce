@@ -1,0 +1,92 @@
+/* ======== GLOBAL ======== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #F7F6F2;          /* Off-white background */
+    color: #2C3E50;               /* Main text color */
+}
+
+/* ======== PAGE TITLE ======== */
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: #2C3E50;
+}
+
+/* ======== WISHLIST ITEM ======== */
+.wishlist-item {
+    display: flex;
+    gap: 20px;
+    background: #FFFFFF;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 900px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.wishlist-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* ======== PRODUCT IMAGE ======== */
+.wishlist-item img {
+    width: 150px;
+    border-radius: 12px;
+}
+
+/* ======== PRODUCT TEXT ======== */
+.wishlist-item h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #2C3E50;
+}
+
+.wishlist-item p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* ======== "MOVE TO CART" BUTTON ======== */
+button {
+    padding: 10px 20px;
+    background: #8FAACB;             /* Primary soft blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    font-size: 16px;
+    transition: background .2s ease, transform .2s ease;
+}
+
+button:hover {
+    background: #B0C9D6;             /* Soft cyan hover */
+    transform: translateY(-2px);
+}
+
+/* ======== FOOTER ======== */
+footer {
+    background: #6E8AAB;             /* Muted blue footer */
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+footer a:hover {
+    background: #F5D6D6;             /* Pastel pink hover */
+    color: #2C3E50;
+}

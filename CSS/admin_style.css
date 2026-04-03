@@ -1,0 +1,231 @@
+/* ------------------------------------------------
+   MASTER ADMIN STYLE: PINK & SLATE (BALANCED)
+--------------------------------------------------- */
+
+:root {
+    --primary-pink: #FF4D94;      
+    --hover-pink: #FF80B3;        
+    --deep-rose: #D81B60;         
+    --dark-slate: #232931;        
+    --light-bg: #FFF5F8;          
+    --text-main: #393E46;         
+    --white: #FFFFFF;
+    --sidebar-width: 240px;       
+}
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-main);
+    display: flex;
+    min-height: 100vh;
+}
+
+/* --- SIDEBAR --- */
+.side-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: var(--sidebar-width);
+    height: 100%;
+    background-color: var(--dark-slate);
+    z-index: 1000;
+}
+
+.side-menu .brand-name {
+    background-color: var(--primary-pink);
+    padding: 25px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+}
+
+.side-menu ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: #E0E0E0;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
+
+/* --- MAIN CONTENT AREA --- */
+.main-content {
+    flex: 1;
+    margin-left: var(--sidebar-width); 
+    padding: 30px; /* Balanced spacing around content */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.admin-container {
+    width: 100%;
+    max-width: 1300px; /* Slightly wider to prevent congestion */
+}
+
+header {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 6px solid var(--primary-pink); 
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+}
+
+header h1 {
+    color: var(--deep-rose);
+    font-size: 1.6rem;
+}
+
+/* --- THE BALANCED TABLE (Not Congested) --- */
+.table-wrapper {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow-x: auto; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px; /* Standard readable size */
+}
+
+table th {
+    background-color: var(--primary-pink);
+    color: white;
+    padding: 15px 20px; /* Added horizontal padding */
+    text-align: left;
+    font-weight: 600;
+    white-space: nowrap; 
+}
+
+table td {
+    padding: 14px 20px; /* Vertical breathing room */
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+}
+
+/* This fixes the column width issue specifically */
+table td:nth-child(8) { /* Assuming 8th column is Address */
+    max-width: 200px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Still keeps it neat */
+}
+
+table tr:hover td {
+    background-color: #fdf2f7; /* Very soft pink hover */
+}
+
+/* --- BUTTONS & INPUTS --- */
+select {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+button, .btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: var(--primary-pink);
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: var(--deep-rose);
+    transform: translateY(-1px); /* Slight lift for "feel" */
+}
+
+
+/* --- FORMS & BUTTONS --- */
+
+form {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    align-self: center;
+
+}
+
+
+
+form input, form textarea, form select {
+
+    padding: 12px;
+
+    border-radius: 6px;
+
+    border: 1px solid #ddd;
+
+    font-size: 1rem;
+
+}
+
+
+
+button, .btn {
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: var(--primary-pink);
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+
+button:hover {
+
+    background-color: var(--deep-rose);
+
+}
+
+
+
+.delete-btn { background-color: #FF5252; }
+
+.delete-btn:hover { background-color: #D32F2F; }

@@ -1,0 +1,141 @@
+/* ------------ COLOR PALETTE (same as homepage) ------------
+   Background: #F7F6F2
+   Text: #2C3E50
+   Primary Blue: #8FAACB
+   Primary Hover: #B0C9D6
+   Soft Pink: #F5D6D6
+   Peach Hover: #E9C89F
+   White: #FFFFFF
+----------------------------------------------------------- */
+
+/* Global */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F6F2;
+    font-family: Arial, sans-serif;
+    color: #2C3E50;
+}
+
+/* Center container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+/* Card */
+.login1 {
+    width: 100%;
+    max-width: 420px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 12px;
+    padding: 28px 22px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading */
+.login1 h2 {
+    margin-bottom: 20px;
+    color: #2C3E50;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login1 input,
+.login1 select,
+.login1 textarea {
+    padding: 10px 14px;
+    border: 1px solid #8FAACB;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #2C3E50;
+    background-color: #FFFFFF;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login1 input:focus,
+.login1 select:focus,
+.login1 textarea:focus {
+    outline: none;
+    border-color: #8FAACB;
+    box-shadow: 0 0 4px rgba(143,170,203,0.5);
+}
+
+/* Submit button */
+.login1 .fod {
+    margin-top: 8px;
+    padding: 10px 16px;
+    background-color: #8FAACB;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.25s, transform 0.15s;
+}
+
+.login1 .fod:hover {
+    background-color: #B0C9D6;
+    transform: translateY(-2px);
+}
+
+/* Cancel button */
+.cancel-btn {
+    background-color: #F7F6F2;
+    color: #2C3E50;
+    border: 1px solid #8FAACB;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 6px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.25s, color 0.2s;
+}
+
+.cancel-btn:hover {
+    background-color: #F5D6D6;
+    color: #2C3E50;
+}
+
+/* Link buttons */
+.link-buttons {
+    margin-top: 10px;
+}
+
+.link-btn {
+    font-size: 14px;
+    color: #8FAACB;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link-btn:hover {
+    color: #B0C9D6;
+    text-decoration: underline;
+}
+
+/* Error messages */
+.error,
+#usernameErr, #emailErr, #passwordErr, #fullnameErr, #phoneErr {
+    font-size: 13px;
+    color: red;
+    margin-top: -6px;
+    text-align: left;
+}
